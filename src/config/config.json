@@ -3,10 +3,10 @@
     "providers": {
       "wordpress": {
         "brokerClass": "WordpressBroker",
-        "baseURL": "http://localhost:8000",
+        "baseURL": "https://anicook.de",
         "query": "?categories=",
         "endpoints": {
-          "posts": "/wp-json/wp/v2/posts",
+          "posts": "/wp-json/wp/v2/posts?per_page=100",
           "navigation": "/wp-json/wp/v2/navigation",
           "kategorien": "/wp-json/wp/v2/categories"
         }
