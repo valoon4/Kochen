@@ -1,0 +1,25 @@
+{
+    "currentProvider": "wordpress",
+    "providers": {
+      "wordpress": {
+        "brokerClass": "WordpressBroker",
+        "baseURL": "https://anicook.de",
+        "query": "?categories=",
+        "endpoints": {
+          "posts": "/wp-json/wp/v2/posts",
+          "navigation": "/wp-json/wp/v2/navigation",
+          "kategorien": "/wp-json/wp/v2/categories"
+        }
+      },
+      "strapi": {
+        "brokerClass": "StrapiBroker",
+        "baseURL": "http://localhost:1337",
+        "slugfilter": "?titel_eq=",
+        "endpoints": {
+          "posts": "/rezeptes",
+          "navigation": "/navigations",
+          "kategorien": "/kategories"
+        }
+      }
+    }
+  }

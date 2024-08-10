@@ -1,0 +1,201 @@
+:root {
+    --hintergrundfarbe: #969696;
+    --kastenfarbe: #c9c9c9;
+    --weiterefarbe: #cc65e6;
+    --textfarbe: #000000;
+    --weißefarbe: #ffffff;
+    --blockfarbe: #9dd8d8;
+    --zahlenfarbe: #008CBA;
+    --navfarbe: #333333;
+}
+
+body {
+    background-color: var(--hintergrundfarbe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--weißefarbe);
+    background-color: var(--navfarbe);
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: skew(-15deg);
+}
+
+h2 {
+    color: var(--hintergrundfarbe);
+    font-size: 2rem;
+}
+
+h3 {
+    color: var(--uhrfarbe);
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--textfarbe);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
+    max-height: 20rem;
+}
+
+.navul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navli,
+.wp-block-navigation-item {
+    flex: 1;
+    margin: 0 10px;
+    background-color: var(--kastenfarbe);
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.posts {
+    margin-bottom: 20px;
+    background-color: var(--kastenfarbe);
+    padding: 20px;
+    border-radius: 50px;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.rezeptblock {
+    background-color: var(--blockfarbe);
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+    border-radius: 50px;
+    margin: 1.5rem;
+}
+
+.schritt {
+    background-color: #d89d9d;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0.5rem;
+
+}
+
+.schrittliste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beitragskasten {
+    background-color: var(--kastenfarbe);
+    border-radius: 50px;
+    width: auto;
+    margin: 1rem 1rem;
+    padding: 1rem;
+}
+
+.backbutton {
+    background-color: var(--navfarbe);
+    color: var(--weißefarbe);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+summary {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reihe {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.beitragsname {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: skew(-15deg);
+    color: var(--textfarbe);
+}
+
+.simplecontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagebutton {
+    padding: 1rem 1.5rem;
+    background-color: var(--kastenfarbe);
+    color: var(--textfarbe);
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.pagebutton.active {
+    background-color: var(--zahlenfarbe);
+    color: var(--weißefarbe);
+}
+
+.navbar {
+    background-color: var(--navfarbe);
+    color: var(--weißefarbe);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: var(--weißefarbe);
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.wp-block-navigation-link {
+    background-color: var(--navfarbe);
+    display: flex;
+    justify-content: center;
+}
+
+.wp-block-navigation-link a {
+    color: white;
+    text-decoration: none;
+}
