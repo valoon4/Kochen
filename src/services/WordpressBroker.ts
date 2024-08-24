@@ -44,10 +44,15 @@ class WordPressBroker implements BrokerTemplate {
     }
   }
 
-  //Alle Posts abrufen und zurückgeben
-  async getPosts(): Promise<PostResponse[]> {
-    const url = `${this.settings.baseURL}${this.settings.endpoints.posts}`;
-    const response = await fetch(url);
+// Alle Posts abrufen und zurückgeben
+async getPosts(): Promise<PostResponse[]> {
+  const url = `${this.settings.baseURL}${this.settings.endpoints.posts}`;
+  let allPosts: PostResponse[] = [];
+  let page = 1;
+  let hasMorePosts = true;
+
+  while (hasMorePosts) {
+    const response = await fetch(`${url}&page=${page}`);
     const data: PostData[] = await response.json();
 
     if (data && data.length > 0) {
@@ -57,21 +62,27 @@ class WordPressBroker implements BrokerTemplate {
         content: post.content?.rendered,
       }));
 
-      return posts;
+      allPosts = allPosts.concat(posts);
+      page++; // Nächste Seite
     } else {
-      throw new Error('Keine Posts gefunden.');
+      hasMorePosts = false; // Keine weiteren Posts
     }
   }
+
+  return allPosts;
+}
+
 
   //Alle Kategorien abrufen und zurückgeben
   async getCategories(): Promise<CategoryResponse[]> {
     const url = `${this.settings.baseURL}${this.settings.endpoints.kategorien}`;
-    const postURL = `${this.settings.baseURL}${this.settings.endpoints.posts}${this.settings.query}`;
+    const postURL = `${this.settings.baseURL}${this.settings.endpoints.posts}`;
 
     try {
       const rawCategories = await fetch(url);
       const categoriesData: CategoryData[] = await rawCategories.json();
       const kategorien: CategoryResponse[] = [];
+      console.log("yoobro");
 
       // Für jede Kategorie die dazugehörigen Posts abrufen
       for (const kategorie of categoriesData) {

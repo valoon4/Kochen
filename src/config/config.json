@@ -4,7 +4,7 @@
       "wordpress": {
         "brokerClass": "WordpressBroker",
         "baseURL": "https://anicook.de",
-        "query": "?categories=",
+        "query": "?categories",
         "endpoints": {
           "posts": "/wp-json/wp/v2/posts?per_page=100",
           "navigation": "/wp-json/wp/v2/navigation",
