@@ -76,7 +76,7 @@ async getPosts(): Promise<PostResponse[]> {
   //Alle Kategorien abrufen und zurückgeben
   async getCategories(): Promise<CategoryResponse[]> {
     const url = `${this.settings.baseURL}${this.settings.endpoints.kategorien}`;
-    const postURL = `${this.settings.baseURL}${this.settings.endpoints.posts}`;
+    const postURL = `${this.settings.baseURL}${this.settings.endpoints.posts}${this.settings.query}`;
 
     try {
       const rawCategories = await fetch(url);
