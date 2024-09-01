@@ -1,3 +1,4 @@
+import { NavigationManager } from '@/utils/NavigationManager';
 import React from 'react';
 
 const MainView = () => {
@@ -5,6 +6,7 @@ const MainView = () => {
   return (
     <main>
       <h1>Cooking Space</h1>
+      <NavigationManager />
       <p>
 
         Hallo zusammen!
