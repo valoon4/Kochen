@@ -6,7 +6,7 @@
         "baseURL": "https://anicook.de",
         "query": "?categories",
         "endpoints": {
-          "posts": "/wp-json/wp/v2/posts?per_page=100",
+          "posts": "/wp-json/wp/v2/posts",
           "navigation": "/wp-json/wp/v2/navigation",
           "kategorien": "/wp-json/wp/v2/categories"
         }

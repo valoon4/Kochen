@@ -28,8 +28,10 @@ class WordPressBroker implements BrokerTemplate {
   async getPostBySlug(postName: string): Promise<PostResponse> {
     const slug = postName.replace(/ /g, '-'); //Wordpress braucht die Form Spaghetti-Bolognese
     const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?slug=${slug}`;
+    console.log("Bin da"+url);
     const response = await fetch(url);
     const rawData: PostData[] = await response.json();
+
   
     if (rawData && rawData.length > 0) {
       const postData = rawData[0];
@@ -46,7 +48,7 @@ class WordPressBroker implements BrokerTemplate {
 
 // Alle Posts abrufen und zurückgeben
 async getPosts(): Promise<PostResponse[]> {
-  const url = `${this.settings.baseURL}${this.settings.endpoints.posts}`;
+  const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?per_page=100`;
   let allPosts: PostResponse[] = [];
   let page = 1;
   let hasMorePosts = true;
