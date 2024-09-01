@@ -1,5 +1,7 @@
-import { BrokerTemplate, CategoryResponse, CategoryData, NavData,
-   NavResponse, PostData, PostResponse, ConfigTemplate} from '../interfaces/InterfaceCollection';
+import {
+  BrokerTemplate, CategoryResponse, CategoryData, NavData,
+  NavResponse, PostData, PostResponse, ConfigTemplate
+} from '../interfaces/InterfaceCollection';
 
 
 class WordPressBroker implements BrokerTemplate {
@@ -27,16 +29,16 @@ class WordPressBroker implements BrokerTemplate {
   //Post per Name abrufen und zurückgeben
   async getPostBySlug(postName: string): Promise<PostResponse> {
     const slug = postName.replace(/ /g, '-')
-    .replace(/ä/g, 'ae')
-    .replace(/ö/g, 'oe')
-    .replace(/ü/g, 'ue')
-    .replace(/ß/g, 'ss');
+      .replace(/ä/g, 'ae')
+      .replace(/ö/g, 'oe')
+      .replace(/ü/g, 'ue')
+      .replace(/ß/g, 'ss');
 
     const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?slug=${slug}`;
     const response = await fetch(url);
     const rawData: PostData[] = await response.json();
 
-  
+
     if (rawData && rawData.length > 0) {
       const postData = rawData[0];
       const post: PostResponse = {
@@ -50,64 +52,79 @@ class WordPressBroker implements BrokerTemplate {
     }
   }
 
-// Alle Posts abrufen und zurückgeben
-async getPosts(): Promise<PostResponse[]> {
-  const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?per_page=100`;
-  let allPosts: PostResponse[] = [];
-  let page = 1;
-  let hasMorePosts = true;
+  // Alle Posts abrufen und zurückgeben
+  async getPosts(): Promise<PostResponse[]> {
+    const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?per_page=100`;
+    let allPosts: PostResponse[] = [];
+    let page = 1;
+    let hasMorePosts = true;
 
-  while (hasMorePosts) {
-    const response = await fetch(`${url}&page=${page}`);
-    const data: PostData[] = await response.json();
+    while (hasMorePosts) {
+      const response = await fetch(`${url}&page=${page}`);
+      const data: PostData[] = await response.json();
 
-    if (data && data.length > 0) {
-      const posts: PostResponse[] = data.map((post: PostData) => ({
-        id: post.id,
-        title: post.title!.rendered,
-        content: post.content?.rendered,
-      }));
+      if (data && data.length > 0) {
+        const posts: PostResponse[] = data.map((post: PostData) => ({
+          id: post.id,
+          title: post.title!.rendered,
+          content: post.content?.rendered,
+        }));
 
-      allPosts = allPosts.concat(posts);
-      page++; // Nächste Seite
-    } else {
-      hasMorePosts = false; // Keine weiteren Posts
+        allPosts = allPosts.concat(posts);
+        page++; // Nächste Seite
+      } else {
+        hasMorePosts = false; // Keine weiteren Posts
+      }
     }
-  }
 
-  return allPosts;
-}
+    return allPosts;
+  }
 
 
   //Alle Kategorien abrufen und zurückgeben
   async getCategories(): Promise<CategoryResponse[]> {
     const url = `${this.settings.baseURL}${this.settings.endpoints.kategorien}`;
-    const postURL = `${this.settings.baseURL}${this.settings.endpoints.posts}${this.settings.query}`;
+    const postURL = `${this.settings.baseURL}${this.settings.endpoints.posts}${this.settings.query}` + "=";
 
     try {
       const rawCategories = await fetch(url);
       const categoriesData: CategoryData[] = await rawCategories.json();
       const kategorien: CategoryResponse[] = [];
-      console.log("yoobro");
 
       // Für jede Kategorie die dazugehörigen Posts abrufen
       for (const kategorie of categoriesData) {
-          const postsResponse = await fetch(`${postURL}${kategorie.id}`);
+
+        let allPosts: PostResponse[] = [];
+        let page = 1;
+        let hasMorePosts = true;
+
+        while (hasMorePosts) {
+
+          const postsResponse = await fetch(`${postURL}${kategorie.id}&page=${page}`);
           const postsData: PostData[] = await postsResponse.json();
 
-          const postTitles = postsData.map(post => post.title!.rendered);
+          if (postsData && postsData.length > 0) {
+            const postTitles = postsData.map(post => post.title!.rendered);
 
           kategorien.push({
-              id: kategorie.id,
-              title: kategorie.name!,
-              categoryitems: postTitles
+            id: kategorie.id,
+            title: kategorie.name!,
+            categoryitems: postTitles
           });
+    
+            page++; // Nächste Seite
+          } else {
+            hasMorePosts = false; // Keine weiteren Posts
+          }
+
+          
+        }
       }
 
       return kategorien;
-  } catch (error) {
-    throw new Error('Fehler beim Abrufen der Kategorien');
-  }
+    } catch (error) {
+      throw new Error('Fehler beim Abrufen der Kategorien');
+    }
   }
 
 }

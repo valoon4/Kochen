@@ -9,7 +9,7 @@ const MainView = () => {
     <main>
       <h1>Cooking Space</h1>
       <NavigationManager />
-      
+      <KategorienManager />
     </main>
   );
 };
