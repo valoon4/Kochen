@@ -7,7 +7,7 @@ const MainView = () => {
   return (
     <main>
       <h1>Cooking Space</h1>
-      
+      <NavigationManager />
       <PostManager />
     </main>
   );
