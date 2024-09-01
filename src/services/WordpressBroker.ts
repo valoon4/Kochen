@@ -26,9 +26,14 @@ class WordPressBroker implements BrokerTemplate {
 
   //Post per Name abrufen und zurückgeben
   async getPostBySlug(postName: string): Promise<PostResponse> {
-    const slug = postName.replace(/ /g, '-'); //Wordpress braucht die Form Spaghetti-Bolognese
+    const slug = postName.replace(/ /g, '-')
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/ /g, '-');
+
     const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?slug=${slug}`;
-    console.log("Bin da"+url);
     const response = await fetch(url);
     const rawData: PostData[] = await response.json();
 
