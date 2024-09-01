@@ -119,7 +119,7 @@ class WordPressBroker implements BrokerTemplate {
         });
       }
 
-      return kategorien;
+      return kategorien.filter(kategorie => kategorie.title !== "Blog");
     } catch (error) {
       throw new Error('Fehler beim Abrufen der Kategorien');
     }
