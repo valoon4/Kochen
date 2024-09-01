@@ -30,8 +30,7 @@ class WordPressBroker implements BrokerTemplate {
     .replace(/ä/g, 'ae')
     .replace(/ö/g, 'oe')
     .replace(/ü/g, 'ue')
-    .replace(/ß/g, 'ss')
-    .replace(/ /g, '-');
+    .replace(/ß/g, 'ss');
 
     const url = `${this.settings.baseURL}${this.settings.endpoints.posts}?slug=${slug}`;
     const response = await fetch(url);
