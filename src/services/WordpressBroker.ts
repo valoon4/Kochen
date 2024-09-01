@@ -94,31 +94,29 @@ class WordPressBroker implements BrokerTemplate {
       // Für jede Kategorie die dazugehörigen Posts abrufen
       for (const kategorie of categoriesData) {
 
-        let allPosts: PostResponse[] = [];
+        let allPostTitles: string[] = [];
         let page = 1;
         let hasMorePosts = true;
 
         while (hasMorePosts) {
-
           const postsResponse = await fetch(`${postURL}${kategorie.id}&page=${page}`);
           const postsData: PostData[] = await postsResponse.json();
 
-          if (postsData && postsData.length > 0) {
+          if (postsData.length > 0) {
             const postTitles = postsData.map(post => post.title!.rendered);
-
-          kategorien.push({
-            id: kategorie.id,
-            title: kategorie.name!,
-            categoryitems: postTitles
-          });
-    
+            allPostTitles.push(...postTitles); // Titel aller Seiten zusammenführen
             page++; // Nächste Seite
           } else {
             hasMorePosts = false; // Keine weiteren Posts
           }
-
-          
         }
+
+        // Einmalige Hinzufügung der Kategorie, nachdem alle Posts abgerufen wurden
+        kategorien.push({
+          id: kategorie.id,
+          title: kategorie.name!,
+          categoryitems: allPostTitles
+        });
       }
 
       return kategorien;
@@ -126,6 +124,7 @@ class WordPressBroker implements BrokerTemplate {
       throw new Error('Fehler beim Abrufen der Kategorien');
     }
   }
+
 
 }
 
