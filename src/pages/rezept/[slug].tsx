@@ -5,6 +5,7 @@ import { loadPostBySlug } from '../../utils/Controller';
 import PostView from '../../displayers/PostView';
 import Head from 'next/head';
 import { PostResponse } from '../../interfaces/InterfaceCollection';
+import { NavigationManager } from '@/utils/NavigationManager';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
 
@@ -24,9 +25,11 @@ const MenuItem: NextPage<{ post: PostResponse }> = ({ post }) => {
       </Head>
       <div className="simplecontainer">
         <h1>Detailansicht</h1>
+
+        <NavigationManager />
         <PostView post={post} />
         <Link href="/">
-        <p className="backbutton" >Home</p>
+          <p className="backbutton" >Home</p>
         </Link>
       </div>
     </>

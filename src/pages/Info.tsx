@@ -7,17 +7,15 @@ const MainView = () => {
     <main>
       <h1>Cooking Space</h1>
       <NavigationManager />
-      <p>
+      <p>Hallo zusammen!</p>
 
-        Hallo zusammen!
+      <p>Hier sammle ich vegane Rezepte aus aller Welt,</p>
 
-        Hier sammle ich vegane Rezepte aus aller Welt,
+      <p>es ist mein eigenes kleines Kochbuch.</p>
 
-        es ist mein eigenes kleines Kochbuch.
+      <p>Fragen, Anregungen? Mail an: longusdingus@protonmail.com</p>
 
-        Fragen, Anregungen? Mail an: longusdingus@protonmail.com
-      </p>
-    </main>
+    </main >
   );
 };
 
