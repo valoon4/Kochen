@@ -11,7 +11,7 @@ const MainView = () => {
       <p>Manga: </p>
       <p>Cartoon: </p>
       <p>Comic: Version 13.11 </p>
-      BRZRKR 04
+      <li>BRZRKR 04</li>
       <p>Live Action: </p>
       <p>Game: </p>
 
