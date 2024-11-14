@@ -10,37 +10,35 @@ const MainView = () => {
 
       <h3>Anime: </h3>
       <details>
-      <summary>Comic Updates</summary>
+      <summary>Anime Updates for Version</summary>
       <p>EMPTY</p>
       </details>
 
       <h3>Manga: </h3>
       <details>
-      <summary>Comic Updates</summary>
+      <summary>Manga Updates for Version </summary>
       <p>EMPTY</p>
       </details>
 
-      <h3>Cartoon: </h3>
       <details>
-      <summary>Comic Updates</summary>
+      <summary>Cartoon Updates for Version </summary>
       <p>EMPTY</p>
       </details>
 
-      <h3>Comic: Version 13.11 </h3>
       <details>
-      <summary>Comic Updates</summary>
+      <summary>Comic Updates for Version 13.11</summary>
       <p>BRZRKR 04</p>
       </details>
 
       <h3>Live Action: </h3>
       <details>
-      <summary>Comic Updates</summary>
+      <summary>Live Action Updates for Version </summary>
       <p>EMPTY</p>
       </details>
 
       <h3>Game: </h3>
       <details>
-      <summary>Comic Updates</summary>
+      <summary>Game Updates for Version </summary>
       <p>EMPTY</p>
       </details>
 
