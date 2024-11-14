@@ -7,13 +7,13 @@ const MainView = () => {
     <main>
       <h1>Project Logs</h1>
       <NavigationManager />
-      <p>Anime: </p>
-      <p>Manga: </p>
-      <p>Cartoon: </p>
-      <p>Comic: Version 13.11 </p>
-      <li>BRZRKR 04</li>
-      <p>Live Action: </p>
-      <p>Game: </p>
+      <h3>Anime: </h3>
+      <h3>Manga: </h3>
+      <h3>Cartoon: </h3>
+      <h3>Comic: Version 13.11 </h3>
+      <ul><li>BRZRKR 04</li></ul>
+      <h3>Live Action: </h3>
+      <h3>Game: </h3>
 
     </main >
   );
