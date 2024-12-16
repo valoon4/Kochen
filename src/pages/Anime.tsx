@@ -8,6 +8,9 @@ interface AnimeSeries {
   title: string;
   cover: string;
   description: string;
+  season: string;
+  folgen: number;
+  year: number;
 }
 
 // Definiere den Typ für die Props, die an MainView übergeben werden
@@ -43,7 +46,7 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
     <main>
       <h1>Anime 1963</h1>
       <NavigationManager />
-      
+
       <div className="gallery">
         {animeseries.map((anime, index) => (
           <div key={index} className="anime-card">
@@ -51,7 +54,9 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
               <img src={anime.cover} alt={anime.title} />
             </div>
             <h3>{anime.title}</h3>
+            <p>{anime.year} {anime.season}, {anime.folgen} Folgen</p>
             <p>{anime.description}</p>
+            <span className="rang">C</span> 
           </div>
         ))}
       </div>
@@ -67,8 +72,13 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
           border: 1px solid #ccc;
           padding: 16px;
           text-align: center;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
         }
-          .image-container {
+        .image-container {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -80,14 +90,23 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
         .anime-card img {
           width: 100%;
           height: 100%;
-          object-fit: fill; /* Streckt das Bild, um den Container auszufüllen */
-          position: absolute;
+          object-fit: fill; /* Bild bleibt zentriert, ohne verzerrt zu werden */
         }
         .anime-card h3 {
           margin: 8px 0;
         }
         .anime-card p {
           font-size: 14px;
+        }
+        .rang {
+          position: absolute;
+          top: 45%;
+          left: 88%;
+          margin-left: 10px;
+          transform: translateY(-50%);
+          font-size: 36px;
+          font-weight: bold;
+          color: gold;
         }
       `}</style>
     </main>
