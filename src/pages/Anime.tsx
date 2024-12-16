@@ -56,8 +56,8 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
             </div>
             <h3>{anime.title}</h3>
             <p>{anime.year} {anime.season}, {anime.folgen} Folgen</p>
+            <p className="rango">{anime.rang}</p>
             <p>{anime.description}</p>
-            <span className="rang">{anime.rang}</span> 
           </div>
         ))}
       </div>
@@ -99,13 +99,8 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
         .anime-card p {
           font-size: 14px;
         }
-        .rang {
-          position: absolute;
-          top: 45%;
-          left: 88%;
-          margin-left: 10px;
-          transform: translateY(-50%);
-          font-size: 36px;
+        .rango {
+          font-size: 1.5rem !important;
           font-weight: bold;
           color: gold;
         }
