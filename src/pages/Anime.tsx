@@ -9,6 +9,7 @@ interface AnimeSeries {
   cover: string;
   description: string;
   season: string;
+  rang: string;
   folgen: number;
   year: number;
 }
@@ -56,7 +57,7 @@ const MainView: React.FC<MainViewProps> = ({ animeseries }) => {
             <h3>{anime.title}</h3>
             <p>{anime.year} {anime.season}, {anime.folgen} Folgen</p>
             <p>{anime.description}</p>
-            <span className="rang">C</span> 
+            <span className="rang">{anime.rang}</span> 
           </div>
         ))}
       </div>

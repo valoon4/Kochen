@@ -3,15 +3,17 @@
       "title": "Tetsuwan Atom",
       "year": 1963,
       "season": "Winter",
-      "folgen": 12,
-      "description": "Der erste japanische Anime, der international bekannt wurde.",
+      "folgen": 193,
+      "rang": "A",
+      "description": "Die erste Animeserie über einen Roboterjungen und seine Abenteuer.",
       "cover": "https://anicook.de/wp-content/uploads/2024/12/Tetsuwan-Atom.jpg"
     },
     {
       "title": "Eightman",
       "year": 1963,
       "season": "Fall",
-      "folgen": 12,
+      "folgen": 56,
+      "rang": "C",
       "description": "Ein Roboter-Ninja kämpft gegen Verbrechen in einer futuristischen Welt.",
       "cover": "https://anicook.de/wp-content/uploads/2024/12/Eightman.jpg"
     },
@@ -19,24 +21,27 @@
       "title": "Ookami Shounen Ken",
       "year": 1963,
       "season": "Fall",
-      "folgen": 12,
-      "description": "Ein Anime über einen Jungen, der sich in einen Wolf verwandeln kann.",
+      "folgen": 86,
+      "rang": "C",
+      "description": "Ein Wolfsjunge und seine Abenteuer.",
       "cover": "https://anicook.de/wp-content/uploads/2024/12/Ookami-Shounen-Ken.jpg"
     },
     {
       "title": "Sennin Buraku",
       "year": 1963,
       "season": "Fall",
-      "folgen": 12,
-      "description": "Ein humorvoller Anime über einen Unsterblichen.",
+      "folgen": 23,
+      "rang": "C",
+      "description": "Ein Liebesdrama in einer antiken Chinesischen Stadt.",
       "cover": "https://anicook.de/wp-content/uploads/2024/12/Sennin-Buraku.jpg"
     },
     {
       "title": "Tetsujin Nijuuhachigou",
       "year": 1963,
       "season": "Fall",
-      "folgen": 12,
-      "description": "Die Geschichte eines riesigen Roboters, der die Welt retten muss.",
+      "folgen": 96,
+      "rang": "B",
+      "description": "Ein riesiger Roboter kämpft gegen Bedrohungen, um die Menschheit zu retten und das Gleichgewicht der Welt zu bewahren.",
       "cover": "https://anicook.de/wp-content/uploads/2024/12/Tetsujin-Nijuuhachigou.jpg"
     }
   ]
