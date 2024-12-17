@@ -14,7 +14,7 @@ const MainView = () => {
     
     { title: 'Smoothie', details: ["Grün", "Gelb"] },
     
-    { title: 'Süßes', details: ["Kakao"] },
+    { title: 'Süßes', details: ["Kakao", "Milchshake"] },
     
     { title: 'Softdrink', details: ["Teinacher"] },
     { title: 'Infused Water', details: ["Minze", "Rosmarin", "Zitrone" ] },
