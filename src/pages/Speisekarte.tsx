@@ -309,6 +309,11 @@ const MainView = () => {
               <p> TBA</p>
               <p className="price">€5,00</p>
             </div>
+            <div className="menu-item">
+              <h3>Sommerrollen</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
           </div>
         </details>
       </div>
@@ -318,27 +323,168 @@ const MainView = () => {
         <details className="abschnitt"><summary className="abschnittname">Hauptspeisen</summary>
           <div className="menu">
             <div className="menu-item">
+              <h3>Arancini</h3>
+              <p> Frittierte Reisbällchen</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Bami Goreng</h3>
+              <p> Bratnudeln mit Chicks</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Bulgogi</h3>
+              <p> Marinierte Seitanstücke</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Chana Masala</h3>
+              <p> Indische Gewürze mit Kichererbsen</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Chilli Cheese Pommes</h3>
+              <p> Fritten überladen mit Chillicheese Soße & Jalapenos</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Chilli Sin Carne</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Cigkoftem</h3>
+              <p> Kalter Bulgurwrap</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Daal</h3>
+              <p> rote, gelbe oder braune Linsen</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Döner</h3>
+              <p> Wahl aus Schnetzel, Tofu, Seitan oder Jackfrucht</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Falafel</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Fellah Köftesi</h3>
+              <p> Türkische Bulgurbällchen</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Frühlingsrollen</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Gochujangmix</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Hotdog</h3>
+              <p> Klassisch oder Chilli Cheese</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Jambalaya</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Käsesandwhich</h3>
+              <p> Wurst, Gouda, Vollkorntoast</p>
+              <p> 20xToast a 1€, 16x Wurst a 1,60€, 8x Käse a 3€     134+20(?)+50(?)=</p>
+              <p className="price">1 Presstoast für €0,90 mit 204 kcal</p>
+            </div>
+            <div className="menu-item">
+              <h3>Mac and Cheese</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Nuggets</h3>
+              <p> Klassisch oder Chilli Cheese oder USA Style</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
               <h3>Nussbraten</h3>
               <p>aaa</p>
               <p className="price">€9,50</p>
             </div>
             <div className="menu-item">
-              <h3>Spaghetti Bolognese</h3>
-              <p>Hausgemachte Tomatensauce mit Rinderhackfleisch</p>
+              <h3>Omlette</h3>
+              <p> Klassische Zwiebelringe</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Onion Rings</h3>
+              <p> Klassische Zwiebelringe</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Orange Tofu</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Pide</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Pita</h3>
+              <p> Gyros mit Tzaziki und Pommes</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Poutine</h3>
+              <p> Champignon oder Tijuana Style</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Quesadilla</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Ratatouille</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Schnitzel</h3>
+              <p>Hausgemachter Seitan</p>
               <p className="price">€12,00</p>
             </div>
             <div className="menu-item">
-              <h3>Caesar Salat</h3>
-              <p>Frischer Salat, Hähnchenbrust, Caesar-Dressing, Croutons</p>
-              <p className="price">€8,00</p>
+              <h3>Spaghetti Bolognese</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <h3>Vegetarische Lasagne</h3>
-              <p>Auberginen, Zucchini, Tomaten und Ricotta</p>
-              <p className="price">€10,50</p>
+              <h3>Sushi</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
             </div>
             <div className="menu-item">
-              <h3>TBA</h3>
+              <h3>Süßsauer Tofu</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Tacos</h3>
+              <p> Blumenkohl mit Kraut</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Teriyakimix</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
@@ -350,6 +496,11 @@ const MainView = () => {
       <div className="section">
         <details className="abschnitt"><summary className="abschnittname">Dessert</summary>
           <div className="menu">
+            <div className="menu-item">
+              <h3>Apfelstrudel</h3>
+              <p>Serviert mit Schlagsahne und Zimt</p>
+              <p className="price">€5,50</p>
+            </div>
             <div className="menu-item">
               <h3>Bananensuppe</h3>
               <p> TBA</p>
@@ -371,19 +522,29 @@ const MainView = () => {
               <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <h3>Schokoladenkuchen</h3>
-              <p>Frisch gebacken, mit einer Portion Vanilleeis</p>
-              <p className="price">€4,50</p>
+              <h3>Pfannkuchen</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <h3>Apfelstrudel</h3>
-              <p>Serviert mit Schlagsahne und Zimt</p>
-              <p className="price">€5,50</p>
+              <h3>Popcorn</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Pudding</h3>
+              <p> Wackelnd oder Classic</p>
+              <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
               <h3>Sauerkirschsuppe</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Schokoladenkuchen</h3>
+              <p>Frisch gebacken, mit einer Portion Vanilleeis</p>
+              <p className="price">€4,50</p>
             </div>
             <div className="menu-item">
               <h3>Schwarze Sesamsuppe</h3>
@@ -404,103 +565,51 @@ const MainView = () => {
         <details className="abschnitt"><summary className="abschnittname">Soßen</summary>
           <div className="menu">
             <div className="menu-item">
+              <h3>Avocadosoße</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
               <h3>Bratensoße</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
-          </div>
-        </details>
-      </div>
-
-
-      {/* Abschnitt für Megafood */}
-      <div className="section">
-        <details className="abschnitt"><summary className="abschnittname">Megafood</summary>
-          <div className="menu">
             <div className="menu-item">
-              <h3>Chilli Cheese Pommes</h3>
-              <p> Fritten überladen mit Chillicheese Soße & Jalapenos</p>
-              <p className="price">€2,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Cigkoftem</h3>
-              <p> Kalter Bulgurwrap</p>
-              <p className="price">€5,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Döner</h3>
-              <p> Wahl aus Schnetzel, Tofu, Seitan oder Jackfrucht</p>
-              <p className="price">€2,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Frühlingsrollen</h3>
+              <h3>Erdnusssoße</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <h3>Hotdog</h3>
-              <p> Klassisch oder Chilli Cheese</p>
-              <p className="price">€2,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Käsesandwhich</h3>
-              <p> Wurst, Gouda, Vollkorntoast</p>
-              <p> 20xToast a 1€, 16x Wurst a 1,60€, 8x Käse a 3€     134+20(?)+50(?)=</p>
-              <p className="price">1 Presstoast für €0,90 mit 204 kcal</p>
-            </div>
-            <div className="menu-item">
-              <h3>Mac and Cheese</h3>
+              <h3>Ranch Soße</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <h3>Nuggets</h3>
-              <p> Klassisch oder Chilli Cheese oder USA Style</p>
-              <p className="price">€2,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Onion Rings</h3>
-              <p> Klassische Zwiebelringe</p>
-              <p className="price">€2,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Pide</h3>
-              <p> TBA</p>
-              <p className="price">€5,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Pita</h3>
-              <p> Gyros mit Tzaziki und Pommes</p>
-              <p className="price">€5,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Poutine</h3>
-              <p> Champignon oder Tijuana Style</p>
-              <p className="price">€5,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Schnitzel</h3>
-              <p>Hausgemachter Seitan</p>
-              <p className="price">€12,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>Tacos</h3>
-              <p> Blumenkohl mit Kraut</p>
-              <p className="price">€2,00</p>
-            </div>
-            <div className="menu-item">
-              <h3>TBA</h3>
+              <h3>Sesamsoße</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <h3>TBA</h3>
+              <h3>Süßsauersoße</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Sweet Chilli Soße</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Teriyakisoße</h3>
               <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
           </div>
         </details>
       </div>
+
+
+     
 
       {/* Abschnitt für Burger & Pizza */}
       <div className="section">
@@ -509,6 +618,11 @@ const MainView = () => {
             <div className="menu-item">
               <h3>Blechpizza</h3>
               <p> Fertigteigpizza mit Zwiebeln, Mais, Oliven, Champignons, Artischocken</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Barbeque Burger</h3>
+              <p> Optional mit Onion Rings</p>
               <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
@@ -529,6 +643,44 @@ const MainView = () => {
             <div className="menu-item">
               <h3>Texmex Wrap</h3>
               <p> Rote Bohnen, Mais, Salsa</p>
+              <p className="price">€2,00</p>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      {/* Abschnitt für Beilagen */}
+      <div className="section">
+        <details className="abschnitt"><summary className="abschnittname">Beilagen</summary>
+          <div className="menu">
+            <div className="menu-item">
+              <h3>Börek</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Bruschetta</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Focaccia</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Manakish</h3>
+              <p> Mit Zatar</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Naan</h3>
+              <p> TBA</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Pizzabrötchen</h3>
+              <p> TBA</p>
               <p className="price">€2,00</p>
             </div>
           </div>
