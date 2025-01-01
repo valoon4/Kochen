@@ -9,33 +9,33 @@ const MainView = () => {
       <NavigationManager />
 
       <details>
-      <summary>Anime Updates for Version</summary>
+      <summary>Anime Updates in 2025</summary>
+      <p>Seasonals 2025</p>
+      </details><br />
+
+      <details>
+      <summary>Manga Updates in 2025 </summary>
       <p>EMPTY</p>
       </details><br />
 
       <details>
-      <summary>Manga Updates for Version </summary>
+      <summary>Cartoon Updates in 2025 </summary>
       <p>EMPTY</p>
       </details><br />
 
       <details>
-      <summary>Cartoon Updates for Version </summary>
+      <summary>Comic Updates in 2025</summary>
       <p>EMPTY</p>
       </details><br />
 
       <details>
-      <summary>Comic Updates for Version 13.11</summary>
-      <p>BRZRKR 04</p>
-      </details><br />
-
-      <details>
-      <summary>Live Action Updates for Version </summary>
+      <summary>Live Action Updates in 2025 </summary>
       <p>EMPTY</p>
       </details><br />
 
       <details>
-      <summary>Game Updates for Version </summary>
-      <p>EMPTY</p>
+      <summary>Game Updates in 2025 </summary>
+      <p>Donkey Kong Country Returns</p>
       </details>
 
     </main >
