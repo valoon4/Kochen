@@ -12,7 +12,11 @@ const MainView = () => {
     
     { title: 'Tee', details: ["Minze", "Kakaochilli"] },
     
-    { title: 'Smoothie', details: ["Grün", "Gelb"] },
+    { title: 'Smoothie', details: [
+      "Tropical: Je 1 Kiwi, Banane, 1TL Limettensaft, 100g Ananas, 200ml Kokoswasser",
+      "Purple Princess: 40g Blaubeeren (1 Teil) zu 12x Vanilleeis und 3-6x Milch",
+      "Gelb"
+    ]},
     
     { title: 'Süßes', details: ["Kakao", "Milchshake"] },
     

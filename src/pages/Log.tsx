@@ -31,23 +31,44 @@ const MainView = () => {
 
       <details>
       <summary>Comic Updates in 2025</summary>
-      <p>Anne Bonny - Die Wölfin der Karibik</p>
+      <p>Anne Bonny - Die Wölfin der Karibik</p>      
+      <p>Avengers Neustart</p>
+      <p>Batman - Arkham Asylum - Living Hell</p>
       <p>Beate & Serge Klarsfeld - Die Nazijäger</p>
       <p>Charlie Chaplin - Die Comic-Biografie</p>
       <p>Colt & Coal</p>
+      <p>Comic Spiegel Extra</p>
+      <p>Daredevil (2002)</p>
+      <p>Daredevil (2008)</p>
+      <p>Daredevil (2012)</p>
+      <p>Die Rache von Moon Knight</p>
+      <p>Die vergessenen Welten</p>
       <p>Die zwei Leben von Balduin</p>
       <p>Ducks - Zwei Jahre in den Ölsanden</p>
       <p>Gebrandmarkt</p>
       <p>Historische Persönlichkeiten</p>
       <p>Hit Girl</p>
       <p>Hoka Hey!</p>
+      <p>Justice League vs. Godzilla vs. Kong</p>
       <p>Kick Ass - Frauenpower</p>
       <p>Kriege und Drachen</p>
+      <p>Spider-Man - Die wahre Geschichte von Green Goblin</p>
+      <p>Star vs the Forces of Evil Pilot</p>
+      <p>Star Wars - Die Sith und der Skywalker</p>
+      <p>Symbiote Spider-Man 2099 - Die Zukunft der Symbionten</p>
+      <p>Venom - Trennungsängste</p>
+      <p>Waffe X-Men - Wolverines, Sammeln!</p>
       <p>Western Love</p>
+      <p>Batman - First Knight Band 02</p>
       <p>Die Ritter von Heliopolis Band 04</p>
+      <p>Elecboy Band 03-04</p>
       <p>Kick Ass Band 05 (Kick Ass 3)</p>
+      <p>Maya Band 02</p>
       <p>Mythen der Antike Band 13 & 14</p>
+      <p>No Zombies Band 03-04</p>
+      <p>Saga Band 10</p>
       <p>Star Wars Special Band 101 - 120</p>
+
       </details><br />
 
       <details>
