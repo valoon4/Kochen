@@ -300,9 +300,9 @@ const MainView = () => {
         </details>
       </div>
 
-      {/* Abschnitt für Klassiker */}
+      {/* Abschnitt für Soulfood */}
       <div className="section">
-        <details className="abschnitt"><summary className="abschnittname">Klassiker</summary>
+        <details className="abschnitt"><summary className="abschnittname">Soulfood</summary>
           <div className="menu">
             <div className="menu-item">
               <h3>Buddha Bowl</h3>
@@ -614,6 +614,16 @@ const MainView = () => {
       <div className="section">
         <details className="abschnitt"><summary className="abschnittname">Soßen</summary>
           <div className="menu">
+          <div className="menu-item">
+              <a href="/rezept/Ahornsenf Soße"><h3>Ahornsenf</h3></a>
+              <p> Typ: Dip</p>
+              <p className="price">€2,00</p>
+            </div>
+            <div className="menu-item">
+              <a href="/rezept/Aioli Knoblauch Soße"><h3>Aioli Knoblauchsoße</h3></a>
+              <p> Typ: Dip</p>
+              <p className="price">€2,00</p>
+            </div>
             <div className="menu-item">
               <h3>Avocadosoße</h3>
               <p> TBA</p>
