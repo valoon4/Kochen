@@ -7,7 +7,6 @@ const MainView = () => {
         "Cranberry", "Grapefruit", "Guave", "Holunder", "Johannisbeere", "Kirsche", "Mango",
         "Maracuja", "Orange", "Papaya", "Pfirsich"]},
 
-
     { title: 'Eistee', details: ["Pfanner"] },
     
     { title: 'Tee', details: ["Minze", "Kakaochilli"] },
@@ -20,8 +19,8 @@ const MainView = () => {
     
     { title: 'Süßes', details: ["Kakao", "Milchshake"] },
     
-    { title: 'Softdrink', details: [{ "name": "Ramune", "link": "/rezept/Ramune" }] },
-    { title: 'Infused Water', details: ["Minze", "Rosmarin", "Zitrone" ] },
+    { title: 'Softdrink', details: [{ name: "Ramune", link: "/rezept/Ramune" }] },
+    { title: 'Infused Water', details: [{ name: "Minze", link: "/home/Minze" }, { name: "Rosmarin", link: "/home/Rosmarin" }, { name: "Zitrone", link: "/home/Zitrone" }] },
     { title: 'Bubbletea', details: ["Drachenfrucht", "Taro"] },
     { title: 'Alkohol', details: ["Bier", "Vodka"] },
   ];
@@ -34,14 +33,17 @@ const MainView = () => {
         {tilesData.map((tile, index) => (
           <div key={index} style={styles.tile}>
             <h2 style={styles.title}>{tile.title}</h2>
-            <details>
-              <summary>Auswahl</summary>
-              <ul style={styles.detailsList}>
-                {tile.details.map((detail, detailIndex) => (
-                  <li key={detailIndex} style={styles.detailItem}>{detail}</li>
-                ))}
-              </ul>
-            </details>
+            <ul style={styles.detailsList}>
+              {tile.details.map((detail, detailIndex) => (
+                <li key={detailIndex} style={styles.detailItem}>
+                  {typeof detail === "string" ? (
+                    detail
+                  ) : (
+                    <a href={detail.link} style={styles.link}>{detail.name}</a>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>
@@ -53,8 +55,8 @@ const MainView = () => {
 const styles: { [key: string]: React.CSSProperties } = {
   tilesContainer: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)', // 3 Spalten, jede 1fr (flexible Breite)
-    gap: '16px', // Abstand zwischen den Kacheln
+    gridTemplateColumns: 'repeat(3, 1fr)', 
+    gap: '16px',
     marginTop: '20px',
   },
   tile: {
@@ -63,20 +65,29 @@ const styles: { [key: string]: React.CSSProperties } = {
     borderRadius: '8px',
     backgroundColor: '#f9f9f9',
     display: 'flex',
-    flexDirection: 'column', // Details untereinander anzeigen
+    flexDirection: 'column',
+    maxHeight: '200px', // Maximale Höhe der Kachel
+    maxWidth: '250px', // Maximale Breite der Kachel
+    overflow: 'auto', // Scrollbar bei Überlauf
   },
   title: {
     marginTop: 0,
   },
   detailsList: {
     paddingLeft: '20px',
-    listStyleType: 'disc', // Punkteliste
-    margin: 0, // Entferne den Standard-Margin
-    padding: 0, // Entferne den Standard-Padding
+    listStyleType: 'disc',
+    margin: 0,
+    padding: 0,
   },
   detailItem: {
-    marginBottom: '8px', // Abstand zwischen Detail-Elementen
+    marginBottom: '8px',
+  },
+  link: {
+    color: 'blue',
+    textDecoration: 'underline',
   }
 };
+
+
 
 export default MainView;
