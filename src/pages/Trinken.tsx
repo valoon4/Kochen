@@ -20,7 +20,7 @@ const MainView = () => {
     
     { title: 'Süßes', details: ["Kakao", "Milchshake"] },
     
-    { title: 'Softdrink', details: ["Teinacher"] },
+    { title: 'Softdrink', details: [{ "name": "Ramune", "link": "/rezept/Ramune" }] },
     { title: 'Infused Water', details: ["Minze", "Rosmarin", "Zitrone" ] },
     { title: 'Bubbletea', details: ["Drachenfrucht", "Taro"] },
     { title: 'Alkohol', details: ["Bier", "Vodka"] },

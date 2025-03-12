@@ -300,9 +300,9 @@ const MainView = () => {
         </details>
       </div>
 
-      {/* Abschnitt für Soulfood */}
+      {/* Abschnitt für Klassiker */}
       <div className="section">
-        <details className="abschnitt"><summary className="abschnittname">Soulfood</summary>
+        <details className="abschnitt"><summary className="abschnittname">Klassiker</summary>
           <div className="menu">
             <div className="menu-item">
               <h3>Buddha Bowl</h3>
@@ -310,7 +310,57 @@ const MainView = () => {
               <p className="price">€5,00</p>
             </div>
             <div className="menu-item">
+              <h3>Burger</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Chilli Sin Carne</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Döner</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Nuggets</h3>
+              <p> Seitanbasis</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Pizza</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Poutine</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Schnitzel</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
               <h3>Sommerrollen</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Spaghetti Bolognese</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Sushi</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Wrap</h3>
               <p> TBA</p>
               <p className="price">€5,00</p>
             </div>
