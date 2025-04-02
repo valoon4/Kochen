@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { NavigationManager } from '@/utils/NavigationManager';
 
 const MainView = () => {
@@ -315,7 +316,7 @@ const MainView = () => {
               <p className="price">€5,00</p>
             </div>
             <div className="menu-item">
-              <a href="/rezept/Bratnudelmix"><h3>Bratnudelmix</h3></a>
+              <Link href="/rezept/Bratnudelmix"><h3>Bratnudelmix</h3></Link>
               <p> Bratnudeln mit Cashews und Gemüse</p>
               <p className="price">€5,00</p>
             </div>
@@ -625,12 +626,12 @@ const MainView = () => {
         <details className="abschnitt"><summary className="abschnittname">Soßen</summary>
           <div className="menu">
           <div className="menu-item">
-              <a href="/rezept/Ahornsenf Soße"><h3>Ahornsenf</h3></a>
+              <Link href="/rezept/Ahornsenf Soße"><h3>Ahornsenf</h3></Link>
               <p> Typ: Dip</p>
               <p className="price">€2,00</p>
             </div>
             <div className="menu-item">
-              <a href="/rezept/Aioli Knoblauch Soße"><h3>Aioli Knoblauchsoße</h3></a>
+              <Link href="/rezept/Aioli Knoblauch Soße"><h3>Aioli Knoblauchsoße</h3></Link>
               <p> Typ: Dip</p>
               <p className="price">€2,00</p>
             </div>
@@ -762,7 +763,7 @@ const MainView = () => {
         <details className="abschnitt"><summary className="abschnittname">TBA Experimental</summary>
           <div className="menu">
             <div className="menu-item">
-            <a href="/rezept/Gulasch"><h3>Gulasch</h3></a>
+            <Link href="/rezept/Gulasch"><h3>Gulasch</h3></Link>
               <p> Seitangulasch</p>
               <p className="price">€12,00</p>
             </div>
