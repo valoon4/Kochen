@@ -768,7 +768,7 @@ const MainView = () => {
               <p className="price">€12,00</p>
             </div>
             <div className="menu-item">
-            <a href="/rezept/Krautwickel"><h3>Krautwickel</h3></a>
+            <Link href="/rezept/Krautwickel"><h3>Krautwickel</h3></Link>
               <p> Tofuhack in Wirsing X Stück</p>
               <p className="price">€2,00</p>
             </div>
