@@ -315,6 +315,11 @@ const MainView = () => {
               <p className="price">€5,00</p>
             </div>
             <div className="menu-item">
+              <a href="/rezept/Bratnudelmix"><h3>Bratnudelmix</h3></a>
+              <p> Bratnudeln mit Cashews und Gemüse</p>
+              <p className="price">€5,00</p>
+            </div>
+            <div className="menu-item">
               <h3>Chilli Sin Carne</h3>
               <p> TBA</p>
               <p className="price">€5,00</p>
@@ -512,6 +517,11 @@ const MainView = () => {
               <h3>Schnitzel</h3>
               <p>Hausgemachter Seitan</p>
               <p className="price">€12,00</p>
+            </div>
+            <div className="menu-item">
+              <h3>Schupfnudeln</h3>
+              <p> TBA</p>
+              <p className="price">€5,00</p>
             </div>
             <div className="menu-item">
               <h3>Spaghetti Bolognese</h3>
@@ -749,11 +759,16 @@ const MainView = () => {
 
       {/* Abschnitt für TBA */}
       <div className="section">
-        <details className="abschnitt"><summary className="abschnittname">TBA</summary>
+        <details className="abschnitt"><summary className="abschnittname">TBA Experimental</summary>
           <div className="menu">
             <div className="menu-item">
-              <h3>Bananensuppe</h3>
-              <p> TBA</p>
+            <a href="/rezept/Gulasch"><h3>Gulasch</h3></a>
+              <p> Seitangulasch</p>
+              <p className="price">€12,00</p>
+            </div>
+            <div className="menu-item">
+            <a href="/rezept/Krautwickel"><h3>Krautwickel</h3></a>
+              <p> Tofuhack in Wirsing X Stück</p>
               <p className="price">€2,00</p>
             </div>
           </div>
