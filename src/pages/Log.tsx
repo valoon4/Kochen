@@ -13,7 +13,7 @@ const MainView = () => {
     { title: 'Japanisch', color: '#8B0000' }, // rot
     { title: 'Fitness', color: '#ADD8E6' }, // hellblau
     { title: 'Bücher', color: '#FFC0CB' }, // pink
-    { title: 'Zeichnen', color: '#FFC0CB' }, // pink
+    { title: 'Skills', color: '#FFC0CB' }, // pink
     { title: 'Story', color: '#FFC0CB' }, // pink
   ];
 
