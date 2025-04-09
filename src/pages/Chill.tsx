@@ -10,7 +10,7 @@ const MainView = () => {
     { title: 'Comics', color: '#A52A2A' }, // rot
     { title: 'Games', color: '#000000' }, // schwarz
     { title: 'Musik', color: '#00008B' }, // dunkelblau
-    { title: 'Bücher', color: '#C0C0C0' }, // silber
+    { title: 'Bücher', color: '#FFC0CB' }, // silber
   ];
 
   return (
