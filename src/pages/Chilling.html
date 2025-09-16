@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ADHS-Entscheider — Schnell auswählen</title>
+  <style>
+    body{margin:0;font-family:Arial, sans-serif;background:#0f172a;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;width:100%;max-width:1000px}
+    .box{background:#1e293b;padding:20px;border-radius:12px;text-align:center;cursor:pointer;transition:transform .2s}
+    .box:hover{transform:scale(1.05);background:#334155}
+    .box h2{margin:0;font-size:20px}
+    .emoji{font-size:40px;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box"><div class="emoji">🌸</div><h2>Anime</h2></div>
+    <div class="box"><div class="emoji">📺</div><h2>Cartoon</h2></div>
+    <div class="box"><div class="emoji">🎥</div><h2>Live Action</h2></div>
+    <div class="box"><div class="emoji">📚</div><h2>Manga</h2></div>
+    <div class="box"><div class="emoji">🎴</div><h2>Comics</h2></div>
+    <div class="box"><div class="emoji">🎮</div><h2>Games</h2></div>
+  </div>
+</body>
+</html>

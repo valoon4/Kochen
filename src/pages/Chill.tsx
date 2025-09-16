@@ -15,7 +15,7 @@ const MainView = () => {
 
   return (
     <main>
-      <h1>Chill</h1>
+      <h1><a href="/Chilling.html">Chill</a></h1>
       <NavigationManager />
       <div style={styles.tilesContainer}>
         {tilesData.map((tile, index) => (
